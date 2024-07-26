@@ -553,6 +553,15 @@ export class cMenuToolbarSettingTab extends PluginSettingTab {
                 new ChangeCmdname(this.app, this.plugin, newCommand, false).open();
               });
           })
+          .addButton((testbutton) => {
+            testbutton
+              .setIcon("pencil")
+              .setTooltip(t("Winter is so sigma"))
+              .setClass("cMenuToolbarSettingsButtonaddtest")
+              .onClick(async () => {
+                new ChangeCmdname(this.app, this.plugin, newCommand, false).open();
+              });
+          })
           .addButton((addsubButton) => {
             addsubButton
               .setIcon("cMenuToolbarSub")
